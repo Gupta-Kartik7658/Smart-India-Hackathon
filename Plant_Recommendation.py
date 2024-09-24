@@ -72,7 +72,7 @@ st.markdown(f"""
 col1, col2 = st.columns([3, 2], gap="large")  # Adjusting width of columns (col1 narrower, col2 wider)
 
 # Load and process the CSV
-with open(r"C:\\Users\\hp\\Desktop\\SIH\\Districts.csv", newline='') as f:
+with open("Districts.csv", newline='') as f:
     reader = csv.reader(f)
     t = [str(row).replace("[", "").replace("]", " ").replace("'", "").replace('"', "").replace("ï»¿", "") for row in reader]
     t.sort()
