@@ -178,6 +178,6 @@ with col2:
                         - Contains antioxidants and vitamins (A, C, E)
                         - Helps in reducing inflammation
                     """)
-                st.image('Aloe_vera.jpg', width=110)
+                st.image('Aloevera.jpg', width=110)
     
     st.markdown('</div>', unsafe_allow_html=True)
