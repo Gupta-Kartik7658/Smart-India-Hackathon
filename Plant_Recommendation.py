@@ -74,10 +74,10 @@ col1, col2 = st.columns([3, 2], gap="large")  # Adjusting width of columns (col1
 # Load and process the CSV
 with open("Districts.csv", newline='') as f:
     reader = csv.reader(f)
-    t = [str(row).replace("[", "").replace("]", " ").replace("'", "").replace('"', "").replace("ï»¿", "") for row in reader if str(row).replace("[", "").replace("]", " ").replace("'", "").replace('"', "").replace("ï»¿", "") not in t]
+    t = [row for row in reader]
     t.sort()
     t.insert(0,'')
-
+st.write(t)
 # Form inside column 1
 with col1:
     # Form styling
