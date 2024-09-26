@@ -75,8 +75,7 @@ col1, col2 = st.columns([3, 2], gap="large")  # Adjusting width of columns (col1
 with open("Districts.csv", newline='') as f:
     t=[]
     reader = csv.reader(f)
-    t = [str(row[0]) for row in reader if str(row[0]) not in t]
-    t = set(t)
+    t = {str(row[0]) for row in reader if str(row[0]) not in t}
     t = list(t)
     t.sort()
     t.insert(0,'')
