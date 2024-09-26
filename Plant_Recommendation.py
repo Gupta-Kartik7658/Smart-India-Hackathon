@@ -180,6 +180,6 @@ with col2:
                         - Contains antioxidants and vitamins (A, C, E)
                         - Helps in reducing inflammation
                     """)
-                st.image('Alovera.jpg', width=130)
+                st.image('Alovera.jpg', width=120)
     
     st.markdown('</div>', unsafe_allow_html=True)
