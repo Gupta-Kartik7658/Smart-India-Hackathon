@@ -6,7 +6,7 @@ st.markdown("<h1 style='text-align: center; color: #fafafa;'>Plant Disease Predi
 
 form1 = st.form(key="Hello")
 with form1:
-    file = st.file_uploader("Upload The image of your Crop/Plant",type=["png"])
+    file = st.file_uploader("Upload The image of your Crop/Plant",type=["png","jpg","jpeg","tiff"])
     col1,col2,col3,col4,col5,col6,col7 = st.columns(7)
     upload_button = col4.form_submit_button("Submit")
     
