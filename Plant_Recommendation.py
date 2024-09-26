@@ -76,6 +76,8 @@ with open("Districts.csv", newline='') as f:
     t=[]
     reader = csv.reader(f)
     t = [str(row[0]) for row in reader if str(row[0]) not in t]
+    t = set(t)
+    t = list(t)
     t.sort()
     t.insert(0,'')
 
@@ -110,7 +112,7 @@ with col2:
     # Output inside column 2 if the form is submitted
     if submit:
         # Check if crop type is Non-Commercial Use to recommend plants
-        if crop_type == "Non-Commercial Use":
+        if crop_type == "Non-Commercial Use" and "Gandhinagar" in city:
             st.write("Recommended Plants:")
             
             # Create a grid layout for images (2 images per row)
